@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Lazy Embeds</title>
+		<link rel="icon" type="image/png" href="favicon.png">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="assets/css/style.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<main id="main">
+
+			<figure class="aspect lazy-video">
+				<a href="https://vimeo.com/16544905">
+					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+					<span class="play-button"></span>
+				</a>
+			</figure>
+
+			<figure class="aspect lazy-video">
+				<a href="https://www.youtube.com/watch?v=SaYX-7emO4U">
+					<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
+					<span class="play-button"></span>
+				</a>
+			</figure>
+
+			<img
+			src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+			width="100%"
+			height="400"
+			data-src="http://unsplash.it/400x400"
+			class="lazy-image"
+			/>
+
+			<img
+			src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+			width="100%"
+			height="400"
+			data-src="http://unsplash.it/500x400"
+			class="lazy-image"
+			/>
+
+			<img
+			src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+			width="100%"
+			height="400"
+			data-src="http://unsplash.it/600x400"
+			class="lazy-image"
+			/>
+
+			<img
+			src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+			width="100%"
+			height="400"
+			data-src="http://unsplash.it/400x400"
+			class="lazy-image"
+			/>
+
+			<img
+			src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+			width="100%"
+			height="400"
+			data-src="http://unsplash.it/500x400"
+			class="lazy-image"
+			/>
+
+		</main>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="assets/js/lazyEmbed-min.js"></script>
+		<script>
+		$(function() {
+			// selector for images, video is lazy-video regardless
+			// $('.lazy-image').lazyLoad(0);
+			$.lazyLoad(0);
+		});
+		</script>
+	</body>
+</html>
